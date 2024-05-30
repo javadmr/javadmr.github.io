@@ -24,6 +24,23 @@
             padding: 20px 0;
             text-align: center;
         }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+        .header-logo img {
+            max-width: 100px;
+            margin-right: 10px;
+        }
+        .header-text {
+            text-align: center;
+            flex: 1;
+        }
         .main-content {
             padding: 20px 0;
         }
@@ -42,15 +59,34 @@
         .section p {
             flex: 1;
         }
+        .footer a {
+            color: #00f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #f00;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Cost Wisdom, Personal Finance Management App</h1>
+        <div class="container header-content">
+            <div class="header-logo">
+                <img src="logo.png" alt="Cost Wisdom Logo">
+                <div>
+                    <h2>Cost Wisdom</h2>
+                    <p>Personal Finance App</p>
+                </div>
+            </div>
+            <div class="header-text">
+                <h1>Manage your personal finance wisely</h1>
+            </div>
+        </div>
     </div>
     <div class="container main-content">
         <div class="section">
-            <img src="logo.png" alt="Manage Categories">
+            <img src="manage_categories.png" alt="Manage Categories">
             <p>Manage your personal finance simply and wisely.</p>
         </div>
         <div class="section">
@@ -59,11 +95,11 @@
         </div>
         <div class="section">
             <img src="languages.png" alt="Supports 36 Languages">
-            <p>Supports 36 language.</p>
+            <p>Supports 36 languages.</p>
         </div>
         <div class="section">
             <img src="Summary.png" alt="Quick Report Summary">
-            <p>Provides quick summary of your expenses and income.</p>
+            <p>Provides a quick summary of your expenses and income.</p>
         </div>
         <div class="section">
             <img src="simple_necessary_info.png" alt="Simple Necessary Info">
